@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="titulo"> Clone Yu-Gi-Oh!</h1>
+    </header>
+    <main class="slider">
+        <button class="btn-seta btn-voltar btn-inicio" id="btn-voltar">
+            <img src="./img/seta.png" alt="botao">
+        </button>
+        <ul class="lista-personagens">
+        <li class="cartao fundo-1 selecionado">
+            <div class="carta-virada" id="btn-inicio"></div>
+    
+            <h2 class="nome">Mago Negro</h2>
+            
+            <div class="nivel-carta">
+             
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+            </div>
+            
+             <img
+              src="./img/Dark-Magic.png"
+              alt="Mago Negro"
+              class="imagem-carta"
+            />
+          
+             <div class="informacoes">
+              <p class="descricao">
+                [Mago / Normal] <br>
+                Você pode enviar até 2 Magias/Armadilhas da sua mão e/ou do campo para o Cemitério; compre esse número de cards. Se este card estiver na sua mão: você pode enviar 1 monstro Mago de Nível 6 ou mais do seu Deck para o Cemitério e, depois, ative 1 desses efeitos;
+                ●Invoque este card por Invocação-Especial.
+                ●Envie este card para o Cemitério e, depois, você pode Invocar por Invocação-Especial 1 "Mago Negro" ou 1 "Pequena Maga Negra" do seu Cemitério.
+                Você só pode usar cada efeito de "Almas dos Magos" uma vez por turno.
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ 2500</span>
+                <span>DEF/ 2100</span>
+              </div>
+            </div>
+          </li>
+    
+          <li class="cartao fundo-2">
+            <div class="carta-virada"></div>
+            <h2 class="nome">dragão alado de rá </h2>
+            <div class="nivel-carta">
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+            </div>
+            <img
+              src="./img/dragaoaladodera.jpg"
+              alt="Nebuladragon, o Ser das Estrelas Eternas"
+              class="imagem-carta"
+            />
+            <div class="informacoes">
+              <p class="descricao">
+                [Besta Divina / Efeito] <br>
+                Não pode ser Invocado por Invocação-Especial. Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, outros cards e efeitos não podem ser ativados. Quando este card for Invocado por Invocação-Normal: você pode pagar PV até restarem apenas 100; este card ganha ATK/DEF igual aos PV pagos. Você pode pagar 1000 PV e, depois, escolha 1 monstro no campo; destrua o alvo.
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ ????</span>
+                <span>DEF/ ????</span>
+              </div>
+            </div>
+          </li>
+          <li class="cartao fundo-3">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Dragão Branco de Olhos Azuis</h2>
+            <div class="nivel-carta">
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+            </div>
+            <img
+              src="./img/Dragão Branco de Olhos Azuis.jpg"
+              alt="Cyberblade Paladin, o Cavaleiro Digital"
+              class="imagem-carta"
+            />
+            <div class="informacoes">
+              <p class="descricao">
+                [Dragão / Normal] <br>
+                Este dragão lendário é uma poderosa máquina de destruição. Praticamente invencível, muito poucos enfrentaram esta magnífica criatura e viveram para contar a história.
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ 3000</span>
+                <span>DEF/ 2500</span>
+              </div>
+            </div>
+          </li>
+          <li class="cartao fundo-4">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Kuriboh Alado</h2>
+            <div class="nivel-carta">
+              <span class="estrela"></span>
+            </div>
+            <img
+              src="./img/Kuriboh.jpg"
+              alt="Mechadragon X, o Destruidor Biomecânico"
+              class="imagem-carta"
+            />
+            <div class="informacoes">
+              <p class="descricao">
+                [Fada / Efeito] <br>
+                Se este card no campo for destruído e enviado para o Cemitério: pelo resto deste turno, você não sofre dano de batalha.
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ 300</span>
+                <span>DEF/ 200</span>
+              </div>
+            </div>
+          </li>
+          <li class="cartao fundo-5">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Obelisco, o Atormentador</h2>
+            <div class="nivel-carta">
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+            </div>
+            <img
+              src="./img/Obelisco.jpg"
+              alt="Archmage Stellarion, o Guardião das Estrelas"
+              class="imagem-carta"
+            />
+            <div class="informacoes">
+              <p class="descricao">
+                [Besta Divina / Efeito] <br>
+                Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e efeitos não podem ser ativados. Nenhum duelista pode escolher este card como alvo de efeitos de card. Uma vez por turno, durante a Fase Final, se este card foi Invocado por Invocação-Especial: envie-o para o Cemitério. Você pode oferecer 2 monstros como Tributo; destrua todos os monstros que seu oponente controla. Este card não pode declarar um ataque no turno em que este efeito for ativado.
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ 4000</span>
+                <span>DEF/ 4000</span>
+              </div>
+            </div>
+          </li>
+          <li class="cartao fundo-6">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Slifer, o Dragão Celeste</h2>
+            <div class="nivel-carta">
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+            </div>
+            <img
+              src="./img/Slifer The Sky Dragon.jpg"
+              alt="Aegis Knight, o Guardião do Firmamento"
+              class="imagem-carta"
+            />
+            <div class="informacoes">
+              <p class="descricao">
+                [Besta Divina / Efeito] <br>
+                Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e efeitos não podem ser ativados. Uma vez por turno, durante a Fase Final, se este card foi Invocado por Invocação-Especial: envie-o para o Cemitério. Ganha 1000 de ATK/DEF para cada card na sua mão. Se um ou mais monstros forem Invocados por Invocação-Normal ou Especial no campo do seu oponente em Posição de Ataque: esses monstros perdem 2000 de ATK e, depois, se algum deles tiver o ATK reduzido a 0 como resultado, destrua-o.
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ XXXX</span>
+                <span>DEF/ XXXX</span>
+              </div>
+            </div>
+          </li>
+          <li class="cartao fundo-7">
+            <div class="carta-virada"></div>
+            <h2 class="nome">Caveira Invocada</h2>
+            <div class="nivel-carta">
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+              <span class="estrela"></span>
+            </div>
+            <img
+              src="./img/Rei-caveira.jpg "
+              alt="Stormbringer Dragon, o Arauto das Tempestades"
+              class="imagem-carta"
+            />
+            <div class="informacoes">
+              <p class="descricao">
+                [	Demônio] <br>
+                Um demônio com poderes das trevas para confundir os inimigos. Entre os monstros do tipo demônio, é dos mais fortes.
+                <br>
+                (Este card deve ser sempre considerado como um card "Arquidemônio".)
+              </p>
+              <div class="informacoes-ataque">
+                <span>ATK/ 2900</span>
+                <span>DEF/ 2100</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn-seta btn-avancar btn-inicio" id="btn-avançar">
+            <img src="./img/seta.png" alt="botao de avançar">
+        </button>
+    </main>
+<script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+h1{
+    text-align: center;
+    z-index: 5;
+}
+
+
+
+
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: "yugioh";
+    src: url(../fonts/fonte-yu-gi-oh.otf);
+}
+
+body {
+    background-image: url(../img/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    gap: 30px; 
+    font-family: "yugioh", sans-serif;
+    cursor: url(../Cursor\ Yugioh/yugioh.jpge.cur), auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cabecalho .titulo {
+    color: white;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    opacity: 0;
+    gap: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 10px 1px 50px 40px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 10px 1px 50px 40px rgba(0, 0, 0, 0.027);
+    box-shadow: 10px 1px 50px 40px rgba(0, 0, 0, 0.288);
+}
+
+
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.lista-personagens {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.cartao .nome {
+    display: flex;
+    background-color: white;
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle,
+            #f3e2c8, #e4cfa5, #c4a57a);
+            border: 2px solid #AAAAAA;
+
+    line-height: 1.5rem;
+    border-radius: 4px;
+}
+
+.cartao .estrela {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+
+.cartao .type img {
+    width: 20px;
+    height: 20px;
+    
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.type {
+    position: relative;
+    
+    left: 140px;
+}
+
+
+.cartao .nivel-carta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartao .imagem-carta {
+    max-width: 260px;
+    max-height: 260px;
+    background-size: cover;
+    align-self: center;
+    /* border-radius: 8px; */
+}
+
+.cartao .informacoes {
+    max-width: 300px;
+    border-radius: 5px;
+    color: #000;
+  
+    background: radial-gradient(circle,
+            #f3e2c8, #e4cfa5, #c4a57a);
+    border: 1px solid #a67c52;
+    text-align: left;
+    line-height: 1.5;
+  
+}
+
+.cartao .informacoes .informacoes-ataque {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+
+}
+
+.cartao .informacoes .informacoes-ataque span {
+    font-size: 13px;
+}
+
+.cartao .informacoes .descricao {
+    border: 1px solid #000;
+    padding: 10px;
+    max-height: 90px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+
+.fundo-1 {
+    background-image: url(../img/fundo-1.jpg);
+    border: 5px solid #AAAAAA;
+    border-radius: 8px;
+
+}
+
+.fundo-2 {
+    border: 5px solid #AAAAAA;
+    background-image: url(../img/fundo-5.jpg);
+    border-radius: 8px;
+}
+
+.fundo-3 {
+    background-image: url(../img/fundo-7.jpg);
+    border: 5px solid #AAAAAA;
+    border-radius: 8px;
+}
+
+.fundo-4 {
+    border: 5px solid #AAAAAA;
+    border-radius: 8px;
+    background-image: url(../img/fundo-1.jpg);
+  
+}
+
+.fundo-5 {
+   
+    background-image: url(../img/fundo-2.jpg);
+    border: 5px solid #AAAAAA;
+    border-radius: 8px;
+    
+}
+.fundo-6 {
+     
+    background: rgb(17,17,17);
+    background: linear-gradient(107deg, rgba(17,17,17,1) 0%, rgba(103,21,21,1) 65%, rgba(212,6,6,1) 100%);
+    border: 5px solid #AAAAAA;
+    border-radius: 8px;
+    
+  
+}
+.fundo-7 {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(16, 15, 41) 51%);
+    border: 5px solid #AAAAAA;
+    border-radius: 8px;
+  
+}
+
+.btn-seta {
+   
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-seta:hover {
+    cursor: url(../Cursor\ Yugioh/yugioh.jpge.cur), auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(255, 254, 254) 0%, rgb(16, 15, 41) 51%);
+}
+
+.btn-voltar {
+    transform: rotate(180deg);
+}
+
+body::-webkit-scrollbar-track{
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+   background-color: #c08057 ;
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #c08057;
+}
