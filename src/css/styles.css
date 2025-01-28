@@ -25,6 +25,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
@@ -70,6 +71,8 @@ body {
     width: 300px;
     height: 500px;
     border-radius: 10px;
+    transition: all 300ms ease-in-out;
+     /* padding: 12px;  */
 }
 
 
@@ -114,7 +117,6 @@ body {
 
 .type {
     position: relative;
-    
     left: 140px;
 }
 
@@ -129,7 +131,7 @@ body {
     max-height: 260px;
     background-size: cover;
     align-self: center;
-    /* border-radius: 8px; */
+     border-radius: 8px;
 }
 
 .cartao .informacoes {
@@ -166,36 +168,38 @@ body {
 }
 
 
+
 .fundo-1 {
     background-image: url(../img/fundo-1.jpg);
-    border: 5px solid #AAAAAA;
+    border: 5px solid #c08057;
     border-radius: 8px;
 
 }
 
 .fundo-2 {
-    border: 5px solid #AAAAAA;
+   
     background-image: url(../img/fundo-5.jpg);
     border-radius: 8px;
+    border: 5px solid #c08057;
 }
 
 .fundo-3 {
     background-image: url(../img/fundo-7.jpg);
-    border: 5px solid #AAAAAA;
+    border: 5px solid #c08057;
     border-radius: 8px;
 }
 
 .fundo-4 {
-    border: 5px solid #AAAAAA;
+    border: 5px solid #c08057;
     border-radius: 8px;
     background-image: url(../img/fundo-1.jpg);
-  
+    
 }
 
 .fundo-5 {
    
     background-image: url(../img/fundo-2.jpg);
-    border: 5px solid #AAAAAA;
+    border: 5px solid #c08057;
     border-radius: 8px;
     
 }
@@ -203,21 +207,19 @@ body {
      
     background: rgb(17,17,17);
     background: linear-gradient(107deg, rgba(17,17,17,1) 0%, rgba(103,21,21,1) 65%, rgba(212,6,6,1) 100%);
-    border: 5px solid #AAAAAA;
+    border: 5px solid #c08057;
     border-radius: 8px;
-    
-  
 }
+
 .fundo-7 {
     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(16, 15, 41) 51%);
-    border: 5px solid #AAAAAA;
+    background-image: url(../img/fundo-7.jpg);
+    border: 5px solid #c08057;
     border-radius: 8px;
-  
 }
 
 .btn-seta {
-   
+    
     z-index: 5;
     border-radius: 50%;
     box-shadow: 5px 5px 10px;
@@ -254,4 +256,33 @@ body::-webkit-scrollbar-track{
 
 ::-webkit-scrollbar-thumb:hover{
     background: #c08057;
+}
+
+.carta-virada {
+    display: none;
+}
+
+.carta-virada.mostrar-fundo-carta {
+    background-image: url(../img/fundo-carta.jpg);
+    display: block;
+    width: 100%;
+    height: 100%;
+     background-size: cover;
+     background-position: center;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+   
+    z-index: 2;
+    
+}
+
+.cartao.virar{
+    transform: rotatez(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.esconder{
+    display: none;
 }

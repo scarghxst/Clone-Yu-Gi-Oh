@@ -3,6 +3,8 @@ const btnAvancar = document.getElementById('btn-avançar');
 const cartoes = document.querySelectorAll('.cartao');
 let cartaoAtual = 0;
 
+
+
 btnAvancar.addEventListener("click", function () {
   if (cartaoAtual === cartoes.length - 1) return;
 
@@ -25,4 +27,19 @@ btnVoltar.addEventListener("click", function () {
   cartaoAtual--;
   const cartaoAnteriorElement = cartoes[cartaoAtual];
   cartaoAnteriorElement.classList.add("selecionado");
+});
+
+cartoes.forEach((cartao) => {
+      cartao.addEventListener("click", function () {
+            const cartaVirada = cartao.querySelector(".carta-virada");
+            //virar o cartão
+            cartao.classList.toggle("virar");
+            //mostrar o fundo da carta virada
+            cartaVirada.classList.toggle("mostrar-fundo-carta");
+
+            const descricao = cartao.querySelector(".descricao");
+            //esconder a descricao
+            descricao.classList.toggle("esconder");
+           
+})            
 });
